@@ -1,0 +1,375 @@
+:root {
+    --plava: #3496d8;
+    --tamnosiva: #8f8f8f;
+    --bela: #fff;
+    --padding: 50px 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: var(--tamnosiva);
+    line-height: 1.5;
+}
+
+header {
+    background: url(../img/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px 0 70px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    align-items: center;
+    text-transform: uppercase;
+    margin-left: 60px;
+    color: var(--bela);
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--bela);
+    letter-spacing: 2px;
+
+}
+.logo a{
+    text-decoration: none;
+    color: var(--bela);
+}
+
+header hgroup {
+    color: var(--bela);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 150px; */
+    height: 80vh;
+}
+    
+header hgroup h2{
+    font-size: 4rem;
+    text-shadow: 3px 3px 16px black;
+}
+
+header hgroup h4 {
+    color: var(--tamnosiva);
+    font-size: 2rem;
+    padding-top: 6px;
+}
+
+header hgroup h5 {
+    font-size: 1.2rem;
+    color: var(--tamnosiva);
+    padding-top: 10px;
+    letter-spacing: 2px;
+}
+
+.introdiction img {
+    width: 100%;
+}
+.introdiction {
+    display: flex;
+    padding: var(--padding);
+    flex-wrap: wrap;
+}
+
+.introdiction .col {
+    flex: 1;
+}
+.introdiction .col:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+.introdiction h2 {
+    font-size: 2rem;
+    color: var(--plava);
+    padding-bottom: 20px;
+}
+
+.introdiction button {
+    width: 200px;
+    background: var(--plava);
+    color: var(--bela);
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+.introdiction button:hover {
+    background: var(--tamnosiva);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.introdiction p {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;   
+}
+
+
+.services {
+    display: flex;
+    padding: var(--padding);
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services article {
+    flex: 0 0 30%;
+}
+
+.services h2 {
+    color: var(--plava);
+    padding-bottom: 20px;
+}
+
+.services h3 {
+    color: var(--plava);
+    font-size: 4rem;
+    padding-bottom: 20px;
+}
+
+.services p {
+    text-align: justify;
+}
+
+
+
+.works {
+    padding: var(--padding);
+}
+
+.works h2 {
+    text-align: center;
+    color: var(--plava);
+    font-size: 3rem;
+}
+
+.works h2 + p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+.img1 {
+    background-image: url(../img/works1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.img2 {
+    background-image: url(../img/works2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.img3 {
+    background-image: url(../img/works3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.img4 {
+    background-image: url(../img/works4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.img5 {
+    background-image: url(../img/works5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.img6 {
+    background-image: url(../img/works6.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+ .works .row {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+ .works article{
+    flex: 0 0 31%;
+    margin-bottom: 60px;
+    position: relative;
+    border-bottom: 10px solid var(--plava);
+ }
+
+ .works h4 {
+     background: rgba(52, 150,216, .6);
+     display: inline-block;
+     position: absolute;
+     top: 0;
+     right: 0;
+     padding: 10px 20px;
+     color: var(--bela);
+ }
+
+ /* 1:24:39 */
+
+footer {
+    background-image: url(../img/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    padding: var(--padding);
+    color: var(--bela);
+}
+
+footer h2 {
+    font-size: 4rem;
+    border-bottom: 10px solid var(--bela);
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+footer hr {
+    background: var(--bela);
+    border: none;
+    height: 1px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    font-size: 1.3rem;
+}
+footer .row  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .row article {
+    flex: 0 0 50%;
+    font-size: 1.7rem;
+    padding: 40px;
+}
+
+footer input[type="email"] {
+    padding: 10px;
+    font-size: 18px;
+}
+
+footer button {
+    padding: 13px 30px;
+    background: var(--plava);
+    border: none;
+    color: var(--bela);
+    font-size: 1rem;
+    position: relative;
+    left: -10px;
+}
+
+
+@media (max-width: 760px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        margin: 10px;
+        letter-spacing: var(--bela);
+        margin: 10px auto;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    header hgroup h2 {
+        font-size: 4rem;
+        text-shadow: 3px 3px 16px black;
+    }
+
+    header hgroup h4 {
+        color: var(--tamnosiva);
+        font-size: 1.3rem;
+        text-align: center;
+        
+    }
+
+    header hgroup {
+        color: var(--bela);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 150px;
+        height: 20vh;
+    }
+
+    header {
+        height: 80vh;
+    }
+
+    .introdiction .col,
+    .services article,
+    .works article,
+    footer .row article {
+        flex: 0 0 95%
+    }
+    .introdiction .col:last-child {
+        padding-left: 0;
+    }
+
+    footer {
+        height: 650px;
+    }
+    footer h2 {
+        font-size: 3rem;
+    }
+    footer {
+        background-image:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../img/footer.jpg);
+    }
+    footer input[type="email"] {
+        padding: 11px;
+        font-size: 16px;
+    }
+    footer button {
+        padding: 13px 11px;
+        background: var(--plava);
+        border: none;
+        color: var(--bela);
+        font-size: 1rem;
+        position: relative;
+        left: -10px;
+    }
+
+    footer .row article {
+        padding: 10px;
+    }
+
+}
